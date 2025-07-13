@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postpartum Help</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Postpartum Help</h1>
+      <h2>Lets Help Our Mothers !</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/169/197/original/images.png?1751128155"
+        alt="Postpartum Help Image"
+        width="300"
+      />
+      <p>
+        The postpartum period, also known as the postnatal period or puerperium,
+        is the time after childbirth when a woman's body, including her
+        reproductive organs and hormonal levels, returns to a pre-pregnancy
+        state. It generally lasts for six to eight weeks, but some changes can
+        persist for up to six months. This period is crucial for both the
+        mother's physical and mental well-being, as well as for the newborn's
+        care and development.
+      </p>
+
+      <p>
+        There are three distinct phases of the postnatal period;the
+        <strong> acute phase</strong>, lasting for six to twelve hours after
+        birth;the <strong> subacute phase</strong>, lasting six weeks; and the
+        <strong>delayed phase</strong>, lasting up to six months.
+      </p>
+
+      <p>
+        <em>Postpartum depression</em> and <em>anxiety</em> are common
+        conditions that can affect new mothers. It is important to recognize the
+        signs and seek help when needed.
+      </p>
+      <br />
+      <p>If you think you have postpartum sypmtoms , click below :</p>
+      <button>Here To Help</button>
+    </div>
+    <span>
+      <hr />
+      <p>
+        If you are experiencing postpartum depression or anxiety, it is
+        important to seek help. Here are some resources that can assist you:
+      </p>
+      <ul>
+        <li>
+          <a href="https://www.postpartum.net/"
+            >Postpartum Support International</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.mayoclinic.org/diseases-conditions/postpartum-depression/symptoms-causes/syc-20349064"
+            >Mayo Clinic - Postpartum Depression</a
+          >
+        </li>
+        <li>
+          <a href="https://www.nami.org/Your-Journey/Postpartum-Mental-Health"
+            >NAMI - Postpartum Mental Health</a
+          >
+        </li>
+      </ul>
+    </span>
+    <script>
+      function Postpartum() {
+        let name = prompt("What is your name?");
+        let symptoms = prompt(
+          "Do you feel sad, anxious, or overwhelmed? (yes/no)"
+        );
+        if (symptoms === "yes" || symptoms === "Yes" || symptoms === "YES") {
+          alert(
+            "It's important to talk about your feelings. Thank you for sharing, " +
+              name +
+              "."
+          );
+        } else {
+          alert("That's great to hear," + name + " take care of yourself.");
+        }
+
+        let support = prompt(
+          "Have you sought support from friends, family, or professionals? (yes/no)"
+        );
+        if (support === "yes" || support === "Yes" || support === "YES") {
+          alert(
+            "Thank you," +
+              name +
+              ". It's great that you have support. Remember, you're not alone."
+          );
+        } else {
+          alert(
+            name +
+              ", it's important to seek support if you feel like you need it."
+          );
+        }
+
+        let resources = prompt(
+          "Would you like to receive resources or support? (yes/no)"
+        );
+
+        if (
+          resources === "yes" ||
+          resources === "Yes" ||
+          resources === "YES" ||
+          resources === "y" ||
+          resources === "Y"
+        ) {
+          let email = prompt(
+            "Please provide your email address to receive resources :"
+          );
+          alert(
+            "Thank you, " +
+              name +
+              ". Resources will be sent to " +
+              email +
+              ". Remember, it's okay to ask for help."
+          );
+        } else {
+          alert(
+            "Thank you " +
+              name +
+              ". Remember, it's okay to ask for help when you need it."
+          );
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", Postpartum);
+    </script>
+  </body>
+</html>
